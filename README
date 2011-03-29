@@ -21,4 +21,4 @@ While browsers may (eventually) provide methods for generating encoded data, as 
 1. Browsers may limit the amount of control that may be applied to each file created (e.g. canvas getDataURL [sic] isn't going to allow you to extract a 1-bit bitmap file with the palette colours as red and grey)
 2. The context may be outside of the browser
 
-As always, this is in very early stages, here be dragons.
+The name 'raff' is a Rocky Horror-esque pun on the 'RIFF' container format name, which is one of the first implemented components of this project. As always, this is in very early stages, here be dragons.
