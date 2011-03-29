@@ -1,0 +1,24 @@
+raff is a JavaScript implementation of various file formats. Both encoding from and decoding to sensible JS representations is provided - for example, audio data can be represented as a Float32Array, encoded to a WAV file, and decoded back into a Float32Array as is appropriate for the Web Audio API. Similarly, a Bitmap file may be represented as is done in a HTML5 canvas data array, or perhaps a two-dimensional array of palette indices (plus a separate palette object).
+
+Codecs may be accessed via RequireJS modules in the format like so:
+
+    require(['types/audio/wav'], function(wav) { ... })
+
+Codecs are in the types folder, sorted and named according to Internet media (MIME) type.
+
+The following codecs are working partially:
+* audio/wav - Microsoft WAVE audio
+
+The following codecs are coming soon:
+* image/bitmap
+
+The following codecs are in the pipeline, but as yet not started:
+* audio/flac
+* audio/ogg
+* video/avi
+
+While browsers may (eventually) provide methods for generating encoded data, as is currently available for the canvas tag, there are two reasons to justify this project regardless:
+1. Browsers may limit the amount of control that may be applied to each file created (e.g. canvas getDataURL [sic] isn't going to allow you to extract a 1-bit bitmap file with the palette colours as red and grey)
+2. The context may be outside of the browser
+
+As always, this is in very early stages, here be dragons.
