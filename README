@@ -16,6 +16,8 @@ The following codecs are in the pipeline, but as yet not started:
 * audio/flac
 * audio/ogg
 * video/avi
+* image/png
+* image/jpeg
 
 While browsers may (eventually) provide methods for generating encoded data, as is currently available for the canvas tag, there are two reasons to justify this project regardless:
 1. Browsers may limit the amount of control that may be applied to each file created (e.g. canvas getDataURL [sic] isn't going to allow you to extract a 1-bit bitmap file with the palette colours as red and grey)
