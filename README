@@ -24,3 +24,5 @@ While browsers may (eventually) provide methods for generating encoded data, as 
 2. The context may be outside of the browser
 
 The name 'raff' is a Rocky Horror-esque pun on the 'RIFF' container format name, which is one of the first implemented components of this project. As always, this is in very early stages, here be dragons.
+
+This will probably always be in a very early stage, in fact.
